@@ -7,18 +7,18 @@ const News = ({ category, country }) => {
 
   //useEffect(() => {
   const fetchData = async () => {
-    //const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=fdd523f86487479a827c6df96d8bb999`);
+    const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=fdd523f86487479a827c6df96d8bb999&pageSize=90`);
     // console.log(response)
-    const response = await axios({
-      url: "https://newsapi.org/v2/top-headlines",
-      method: "GET",
-      params: {
-        category: `${category}`,
-        country: `${country}`,
-        apiKey: "fdd523f86487479a827c6df96d8bb999",
-        pageSize: 90
-      }
-    })
+    // const response = await axios({
+    //   url: "https://newsapi.org/v2/top-headlines",
+    //   method: "GET",
+    //   params: {
+    //     category: `${category}`,
+    //     country: `${country}`,
+    //     apiKey: "fdd523f86487479a827c6df96d8bb999",
+    //     pageSize: 90
+    //   }
+    // })
     //console.log(response)
     setArticles(response.data.articles);
   };
