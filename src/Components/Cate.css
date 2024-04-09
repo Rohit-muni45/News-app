@@ -43,7 +43,6 @@ img {
     flex-wrap: wrap;
     justify-content: space-evenly;
     
-
 }
 
 .box {
@@ -79,7 +78,7 @@ h2 {
     .selectcon {
         margin: 10px;
         /* Adjust margin for smaller screens */
-        font-size: 1.2rem;
+        font-size: 1rem;
         /* Decrease font size for smaller screens */
     }
 
@@ -98,7 +97,7 @@ h2 {
     }
 
     .box {
-        width: 170px;
+        width: 130px;
         height: auto;
         border: 2px solid;
         margin-bottom: 10px;

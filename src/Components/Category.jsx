@@ -4,12 +4,12 @@ import './Cate.css'
 const Category = ({ onSelectCategory }) => {
   const categories = [
     'General',
-    'Business', 
+    'Business',
+    'Technology',
     'Health',
     'Science',
     'Entertainment',
     'Sports',
-    'Technology'
   ];
 
   return (
