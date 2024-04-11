@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cate.css'
 
 const Category = ({ onSelectCategory }) => {
@@ -12,11 +12,22 @@ const Category = ({ onSelectCategory }) => {
     'Sports',
   ];
 
+const [activeCate, setActiveCate] = useState()
+
+const handleClick = (category) => {
+  onSelectCategory(category)
+  setActiveCate(category)
+}
+
   return (
     <div>
       <div className='nav'>
         {categories.map((category, index) => (
-          <div className='cate' key={index} onClick={() => onSelectCategory(category)}>
+          <div 
+            className={`cate ${activeCate === category ? 'active' : ''}`}
+            key={index} 
+            onClick={() => handleClick(category)}
+          >
             {category}
           </div>
         ))}

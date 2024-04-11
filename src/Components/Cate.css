@@ -30,7 +30,16 @@ body{
 }
 
 .cate:hover {
-    background-color: red;
+    background-color: aqua;
+    color: black;
+    padding: 5px;
+}
+
+.cate.active {
+    background-color: aqua;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 img {
