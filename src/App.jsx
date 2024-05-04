@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import News from './Components/News';
 import Category from './Components/Category';``
 import './Components/Cate.css'
+import Footer from './Components/Footer';
 // function App() {
 //   const [selectedCategory, setSelectedCategory] = useState('');
 
@@ -45,6 +46,7 @@ function App() {
   ];
 
   return (
+    <>
     <div>
       <h1>News Today</h1>
       <div>
@@ -59,7 +61,9 @@ function App() {
         </select>
       </div>
       <News category={selectedCategory} country={selectedCountry} />
+      <Footer/>
     </div>
+    </>
   );
 }
 
